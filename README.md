@@ -6,8 +6,10 @@ pycaret==3.0.4
 catboost==1.2
 scikit-learn==1.2.2
 
-These are the versions used in flask (VSC/Pycharm) & Jupyter notebook.
+These are the versions used in Flask (VSC/Pycharm) & Jupyter Notebook.
 The mainapp.py is the one we used to try to integrate but failed to do so with only one app working while the other two is not working as expected. Hence, we have individual apps in a different folder with all the necessary files.
+
+Downloading submitted files on Github is advised as they are of most up to date. Thank you.
 
 ## Tools used in this project
 * [Poetry](https://towardsdatascience.com/how-to-effortlessly-publish-your-python-package-to-pypi-using-poetry-44b305362f9f): Dependency management - [article](https://mathdatasimplified.com/2023/06/12/poetry-a-better-way-to-manage-python-dependencies/)
