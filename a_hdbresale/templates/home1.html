@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Predict HDB Resale Price</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='./style1.css') }}">
+
+
+</head>
+
+<body>
+ <div class="login">
+	<h1>Predict HDB Resale Price</h1>
+
+     <!-- Form to enter new data for predictions  -->
+    <form action="{{ url_for('predict')}}"method="POST">
+      <input type="text" name="town" placeholder="Town" required="required" /><br>
+    	<input type="text" name="flat_type" placeholder="Flat Type" required="required" /><br>
+        <input type="text" name="storey_range" placeholder="Storey Range" required="required" /><br>
+        <input type="text" name="floor_area_sqm" placeholder="Floor Area (sqm)" required="required" /><br>
+        <input type="text" name="lease_commence_date" placeholder="Lease Commence year" required="required" /><br>
+        <input type="text" name="cbd_dist" placeholder="CBD Distance in Metres" required="required" /><br>
+        <input type="text" name="min_dist_mrt" placeholder="MRT Distance in Metres" required="required" /><br>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+
+
+ </div>
+ {{pred}}
+
+</body>
+</html>
