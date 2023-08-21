@@ -46,11 +46,6 @@ git add data.dvc
 git commit -m "add data"
 ```
 
-To push the data to remote storage, type:
-```bash
-dvc push 
-```
-
 ## Auto-generate API documentation
 
 To auto-generate API document for your project, run:
